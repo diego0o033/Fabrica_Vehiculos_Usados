@@ -43,11 +43,4 @@ public Vehiculo(){}
     public String toString() {
         return "Vehiculo{" + "patente=" + patente + ", marca=" + marca + ", modelo=" + modelo + '}';
     }
-
-    public void consultar_Modelo(String modelo)
-    {
-        System.out.println("El siguiente modelo consultado es un vehiculo....");
-    }
-
-    
 }

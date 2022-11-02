@@ -12,13 +12,11 @@ public class Concesionario
     private String nombre;
     private ArrayList<Auto> autos;
     
-    //private ArrayList<Motocicleta> motos;
+    
 
     public Concesionario(String nombre)
     {
         this.nombre=nombre;
-        
-        //his.motos=new ArrayList<Motocicleta>();
     }
 
     public Concesionario()

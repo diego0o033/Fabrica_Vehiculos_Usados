@@ -65,6 +65,7 @@ public class Auto extends Vehiculo implements Comparable<Auto>
     public void setPrecio(double precio){
     this.precio=precio;
     }
+    
     @Override
     public String toString() 
     {
@@ -80,19 +81,6 @@ public class Auto extends Vehiculo implements Comparable<Auto>
         return "Auto{" + ", patente=" + super.getPatente() + ", marca=" + super.getMarca() + ", modelo=" + super.getModelo() + ", cilindrada=" + cilindrada + ", ac=" + mostrar + ", puertas=" + puertas + ", cantidad/stock="+ cantidad_auto + ",cantidad de kilometros="+ cantidad_kms + ", precio del vehiculo al valor fabrica= " + precio + '}';
     }
     
-    @Override
-    public void consultar_Modelo(String modelo)
-    {
-        if(modelo.equalsIgnoreCase("fiesta"))
-        {
-        System.out.println("El siguiente modelo consultado es un auto....");
-        }
-        else
-        {
-            System.out.println("Lo siento, no ha ingresado un modelo valido de auto");
-        }
-    }
-
     @Override
     public int compareTo(Auto a) 
     {

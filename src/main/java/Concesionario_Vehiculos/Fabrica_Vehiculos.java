@@ -53,7 +53,6 @@ public boolean CargarVehiculo_x_Concesionario( String nombre)
     boolean vehiculo_ingresado= false;   
       
     for(Concesionario c: concesionarios)
-//    if((this.buscar_Concesionario(nombre)!=null) && (nombre.equalsIgnoreCase("vargas s.a.") || nombre.equalsIgnoreCase("giulia s.a.")))
     {
            if((nombre.equalsIgnoreCase("vargas s.a.") || (nombre.equalsIgnoreCase("giulia s.a."))) && (c.getNombre().equalsIgnoreCase(nombre)))
            {
@@ -138,21 +137,7 @@ public boolean modificar_VehiculoXConcesionario(String nombre_concesionario)
         }
    return modificado; 
 }
-// Esta funcion, se va a utilizar mas adelante, cuando se extienda el proyecto a la hora de incorporar diferentes tipos de vehiculos, asi mismo, cuando se aplique polimorfismo y excepciones
-//public String buscar_Concesionario(String nombre_concesionario)
-//{
-//    String concesionario_buscado= null;
-//    
-//    for(Concesionario c: concesionarios)
-//    {
-//        if(c.getNombre().equalsIgnoreCase(nombre_concesionario))
-//        {
-//            concesionario_buscado=c.getNombre();
-//            break;
-//        }
-//    }
-//  return concesionario_buscado;
-//}
+
 public boolean eliminar_VehiculoXConcesionaria(String nombre_concesionario)
 {
    Scanner ingreso_datos= new Scanner(System.in);

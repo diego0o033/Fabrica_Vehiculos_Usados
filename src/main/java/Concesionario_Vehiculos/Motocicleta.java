@@ -16,16 +16,4 @@ public class Motocicleta extends Vehiculo
     
     public Motocicleta(){}
 
-    @Override
-    public void consultar_Modelo(String modelo)
-    {
-        if(modelo.equalsIgnoreCase("z16"))
-        {
-        System.out.println("El siguiente modelo consultado es una moto....");
-        }
-        else
-        {
-            System.out.println("Lo siento, no ha ingresado un modelo valido de una  moto");
-        }
-    }
 }
